@@ -15,14 +15,11 @@ import {
   MenuItem,
   List,
   ListItem,
-  ListItemText,
-  ListItemSecondaryAction,
 } from '@mui/material';
 import {
   Add as AddIcon,
   Delete as DeleteIcon,
   Edit as EditIcon,
-  Flag as GoalIcon,
 } from '@mui/icons-material';
 import { useTheme, useMediaQuery } from '@mui/material';
 import PageTransition from '../components/PageTransition';

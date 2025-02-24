@@ -13,6 +13,7 @@ import {
   Box,
 } from '@mui/material';
 import { useDispatch } from 'react-redux';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { v4 as uuidv4 } from 'uuid';
 import { addTransaction, updateTransaction } from '../redux/transactionsSlice';
 import { Transaction } from '../types';

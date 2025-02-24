@@ -29,21 +29,25 @@
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/finance-tracker.git
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd finance-tracker
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
 
 4. Start the development server:
+
 ```bash
 npm start
 ```
@@ -76,21 +80,25 @@ src/
 ## 🎯 Core Features
 
 ### Expense Tracking
+
 - Add new expenses
 - Categorize transactions
 - View spending patterns
 
 ### Bill Reminders
+
 - Set up recurring bill reminders
 - Receive notifications for upcoming payments
 - Mark bills as paid
 
 ### Goal Setting
+
 - Create financial goals
 - Track progress
 - Set target dates
 
 ### Debt Calculator
+
 - Input your debts
 - Choose payment strategies
 - View projected payoff timeline

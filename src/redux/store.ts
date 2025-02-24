@@ -5,7 +5,6 @@ import themeReducer from './themeSlice';
 import transactionsReducer from './transactionsSlice';
 import remindersReducer from './remindersSlice';
 import goalsReducer from './goalsSlice';
-import { RootState } from '../types';
 
 const persistConfig = {
   key: 'root',
@@ -34,4 +33,5 @@ export const store = configureStore({
 
 export const persistor = persistStore(store);
 
-export type AppDispatch = typeof store.dispatch; 
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>; 

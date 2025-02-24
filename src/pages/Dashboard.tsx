@@ -126,6 +126,13 @@ const Dashboard = () => {
   const hasTransactions = transactions.length > 0;
   const hasExpenses = transactions.some((t: Transaction) => t.type === 'expense');
 
+  // Or implement a basic chart if you want to use them now:
+  const data = [
+    { name: 'Jan', value: 400 },
+    { name: 'Feb', value: 300 },
+    // ... more data
+  ];
+
   return (
     <Box component={motion.div} initial="hidden" animate="visible" variants={containerVariants}>
       <Typography variant="h4" gutterBottom component={motion.h4} variants={itemVariants}>
@@ -252,6 +259,10 @@ const Dashboard = () => {
           </Paper>
         </Grid>
       </Grid>
+
+      <LineChart width={600} height={300} data={data}>
+        <Line type="monotone" dataKey="value" stroke="#8884d8" />
+      </LineChart>
     </Box>
   );
 };
